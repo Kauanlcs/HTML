@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria, Contato e Cadastro</title>
+ <style>
+  body{
+    background:black;
+    color:white;
+    font-size:18px;
+    font-family:Arial, sans-serif;
+}
+
+h1,h2{
+    font-size:28px;
+}
+
+input, textarea, button{
+    font-size:18px;
+}
+textarea{
+    width:100%;
+    height:120px;
+    margin-top:8px;
+}
+</style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Meu Site</h1>
+
+   <nav>
+    <a href="hobbies.html">Galeria</a>
+    <a href="cadastro.html">Cadastro</a>
+</nav>
+  </header>
+ 
+  <section id="contato">
+
+    <h2>Página de Contato</h2>
+
+    <form>
+
+      <div class="campo">
+        <label for="nomeContato">Nome Completo:</label>
+
+        <input
+          type="text"
+          id="nomeContato"
+          name="nomeContato"
+          required
+          minlength="3"
+          maxlength="100"
+        >
+      </div>
+
+      <div class="campo">
+        <label for="emailContato">Email:</label>
+
+        <input
+          type="email"
+          id="emailContato"
+          name="emailContato"
+          required
+        >
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Mensagem:</label>
+
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          required
+          minlength="10"
+          maxlength="300"
+        ></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+
+    </form>
+
+  </section>
